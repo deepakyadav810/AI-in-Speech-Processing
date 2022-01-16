@@ -62,3 +62,66 @@ M = [1 2 3
 7  8 9 ]
 fprintf('%f\n', M);
 X = M(1,:)
+
+fprintf('2a(1)\n');
+M = [3, 12, 6, 8 ;5, 3, 9, 11;1, 2, 14, 7;10, 5, 3, 6 ]
+fprintf('2a(2)\n');
+M =[ 3, 12, 6, 8 
+5, 3, 9, 11
+1, 2, 14, 7
+10, 5, 3, 6 ]
+fprintf('2a(3)\n');
+X = [3, 12, 6, 8 
+5, 3, 9, 11 ]
+Y = [1, 2, 14, 7
+10, 5, 3, 6 ]
+M = [X,
+Y]
+fprintf('2a(4)\n');
+M = readmatrix('matrix.txt')
+fprintf('2b(1)\n');
+M'
+fprintf('2b(2)\n');
+inv(M)
+fprintf('2c\n');
+size(M)
+fprintf('2d\n');
+X = M(2,:)
+Y = M(:,3)
+fprintf('2e\n');
+X*Y
+fprintf('2f\n');
+X.*Y
+fprintf('2g\n');
+M(end,:) =  [1 5 9 0]
+fprintf('2h\n');
+B = M(:)'
+B = M(:)''
+fprintf('2i\n');
+flip(M)
+fprintf('2j\n');
+D = diag(M)
+fprintf('2k\n');
+V = diag(D)
+fprintf('2l\n');
+I = eye(size(V))
+fprintf('2m\n');
+N = [V I]
+fprintf('3\n');
+x=[0:.01:1]
+size(x)
+fprintf('4\n');
+x = [1 6 9 2];
+y = [2 0 3 8];
+sum(x.*[y;y],2)
+a*b.'
+fprintf('5\n');
+who
+whos
+fprintf('who : lists the variables currently in the workspace.\n');
+fprintf('whos : lists the current variables and their sizes and types. It also reports the totals for sizes.\n');
+fprintf('6\n');
+U=[4 5 6 7];
+S = sum(U)
+Mean = mean(U)
+Median = median(U)
