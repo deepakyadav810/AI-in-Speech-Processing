@@ -125,3 +125,14 @@ U=[4 5 6 7];
 S = sum(U)
 Mean = mean(U)
 Median = median(U)
+
+%Extra problem
+[y,Fs] = audioread('Moscow.mp3');
+%sound(y,Fs);
+size('Moscow.mp3');
+length(y)
+whos y;
+whos Fs;
+TotalTime = length(y)./Fs;
+t = 0:TotalTime/(length(y)):TotalTime-TotalTime/length(y);
+plot(t,y)
