@@ -1,4 +1,3 @@
-%{
 clear;
 fprintf('Experiment 1\n')
 fprintf('Part I\n')
@@ -31,13 +30,11 @@ figure;
 plot(t,x);
 xlabel('time (in seconds)');
 title('Sampled Signal');
-%}
 
 
 clear all
 fprintf('Experiment 2\n')
 [y,Fs] = audioread('/MATLAB Drive/AI Speech(21AIE315)/Lab1/Moscow.mp3');
-%{
 size('Moscow.mp3');
 length(y)
 TotalTime = length(y)./Fs;
@@ -49,13 +46,12 @@ plot(t,y)
 fprintf('Experiment 3\n')
 pause(10)
 sound(y,Fs)
-%}
 
 
 fprintf('Experiment 4\n')
 audiowrite('recorded.wav',y,Fs)
 
-%{
+
 fprintf('Experiment 5\n')
 yRange = [-0.7,0.7];
 soundsc(y,yRange);%makes the sound slow as well as play it for long
@@ -67,5 +63,4 @@ soundsc(y, 2*Fs);%plays with twice the rate of normal recorded song
 
 sound(flipud(y),Fs);%reversed the sound
 
-%}
 
