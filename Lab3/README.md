@@ -1,1 +1,1 @@
-This folder contains the solutions to Lab2 excercise
+This folder contains the solutions to Lab3 excercise
